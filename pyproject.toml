@@ -1,0 +1,27 @@
+[project]
+name = "llm-vertex"
+version = "0.0.1"
+description = "LLM plugin to access Google Vertex AI"
+readme = "README.md"
+authors = [{name = "Arjan Mossel"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "httpx",
+    "ijson",
+    "llm",
+]
+
+[project.urls]
+Homepage = "https://github.com/ar-jan/llm-vertex"
+Changelog = "https://github.com/ar-jan/llm-vertex/releases"
+Issues = "https://github.com/ar-jan/llm-vertex/issues"
+CI = "https://github.com/ar-jan/llm-vertex/actions"
+
+[project.entry-points.llm]
+vertex = "llm_vertex"
+
+[project.optional-dependencies]
+test = ["pytest"]
